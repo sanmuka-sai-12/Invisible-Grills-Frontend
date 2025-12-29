@@ -20,7 +20,7 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
                         <div class="icon">❤️</div>
                         <div class="stat-number">100%</div>
                         <div class="stat-title">Safe Installation</div>
-                        <div class="stat-desc">Child & pet-proof</div>
+                        <div class="stat-desc">Child & pet-<br>proof</div>
                     </div>
                     <div class="stat-card">
                         <div class="icon">♻️</div>
@@ -39,9 +39,9 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
         <div class="bottom-grid">
             <div class="cta-card">
                 <div class="dots">• • • •</div>
-                <h3>Learn More About Our Safety Standards</h3>
+                <h3>Learn More About Our Safety<br>Standards</h3>
                 <p>Explore how our expert technicians, premium materials, and precise installation methods.</p>
-                <button class="arrow-btn">→</button>
+                <button class="arrow-btn"><img src={upArrowIcon} alt="Up Arrow" /></button>
             </div>
             
             <div class="features-list">
@@ -49,7 +49,9 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
                     <div class="number">1</div>
                     <div class="feature-content">
                         <h4>Skilled Technicians</h4>
-                        <p>Installation handled by trained professionals who ensure precision, safety, and clean finishing.</p>
+                        <div class="description-text">
+                            <p>Installation handled by trained professionals who<br>ensure precision, safety, and clean finishing.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -57,7 +59,9 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
                     <div class="number">2</div>
                     <div class="feature-content">
                         <h4>Quality Guarantee</h4>
-                        <p>Premium marine-grade steel cables and brackets designed for durability, corrosion resistance.</p>
+                        <div class="description-text">
+                            <p>Premium marine-grade steel cables and brackets<br>designed for durability, corrosion resistance.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -65,7 +69,9 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
                     <div class="number">3</div>
                     <div class="feature-content">
                         <h4>Trusted Partner</h4>
-                        <p>Thousands of homeowners rely on us for reliable service, transparent pricing.</p>
+                        <div class="description-text">
+                            <p>Thousands of homeowners rely on us for reliable<br>service, transparent pricing.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,8 +95,8 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
     }
 
     h2 {
-        font-family: 'Inter', sans-serif;
-        font-size: 48px;
+        font-family: 'Montaga', serif;
+        font-size: 40px;
         font-weight: 400;
         color: #333;
         text-align: center;
@@ -105,15 +111,19 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
         margin-bottom: 40px;
     }
 
-    .image-left img,
-    .image-right img {
-        width: 100%;
+    .image-left img {
+        width: calc(100% + 80px);
         height: 350px;
         object-fit: cover;
         border-radius: 16px;
+        margin-left: -60px;
     }
 
     .image-right img {
+        width: calc(100% + 80px);
+        height: 350px;
+        object-fit: cover;
+        border-radius: 16px;
         object-position: center top;
     }
 
@@ -122,6 +132,7 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
     .center-content p {
         font-family: 'Inter', sans-serif;
         font-size: 16px;
+        font-weight: 400;
         line-height: 1.6;
         color: #333;
         margin-bottom: 30px;
@@ -130,12 +141,13 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
     .stats {
         display: flex;
         gap: 20px;
+        margin-top: 60px;
     }
 
     .stat-card {
         background: #F5EFE7;
         border-radius: 16px;
-        padding: 24px;
+        padding: 18px;
         flex: 1;
         text-align: center;
     }
@@ -144,6 +156,12 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
         font-size: 24px;
         margin-bottom: 12px;
         color: #B37A42;
+    }
+
+    .icon img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
     }
 
     .stat-number {
@@ -156,15 +174,16 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
 
     .stat-title {
         font-family: 'Inter', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
-        color: #333;
+        color: #242424;
         margin-bottom: 4px;
     }
 
     .stat-desc {
         font-family: 'Inter', sans-serif;
-        font-size: 12px;
+        font-size: 16px;
+        font-weight: 400;
         color: #666;
         line-height: 1.3;
     }
@@ -176,10 +195,13 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
     }
 
     .cta-card {
-        background: #D4C4B0;
+        background: linear-gradient(135deg, #E8B063 0%, #9C7743 52%);
         border-radius: 16px;
-        padding: 40px;
+        padding: 140px 40px 0 40px;
         position: relative;
+        width: 100%;
+        height: auto;
+        margin-left: -60px;
     }
 
     .dots {
@@ -191,7 +213,7 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
 
     .cta-card h3 {
         font-family: 'Inter', sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
         color: #333;
         margin-bottom: 16px;
@@ -200,61 +222,81 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
 
     .cta-card p {
         font-family: 'Inter', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 400;
         line-height: 1.5;
-        color: #666;
+        color: #000000;
         margin-bottom: 20px;
     }
 
     .arrow-btn {
         width: 50px;
         height: 50px;
-        border-radius: 50%;
         background: transparent;
-        border: 2px solid #B37A42;
-        color: #B37A42;
-        font-size: 24px;
+        border: none;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        bottom: 40px;
-        right: 40px;
+        top: 20px;
+        right: 20px;
+        transform: rotate(22.5deg);
+    }
+
+    .arrow-btn img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
     }
 
     .features-list {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        position: relative;
+        height: 100%;
+        justify-content: space-between;
     }
+
+
 
     .feature-item {
         display: flex;
         gap: 20px;
-        align-items: flex-start;
+        align-items: baseline;
+        position: relative;
+        z-index: 1;
+    }
+
+    .feature-item:nth-child(2) {
+        margin: auto 0;
+    }
+
+    .feature-item:nth-child(3) {
+        margin-top: auto;
     }
 
     .number {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        border: 2px solid #B37A42;
+        border: 2px solid #808080;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: 'Inter', sans-serif;
         font-size: 18px;
         font-weight: 600;
-        color: #B37A42;
+        color: #000000;
         flex-shrink: 0;
     }
 
     .feature-content h4 {
         font-family: 'Inter', sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
         margin-bottom: 8px;
     }
 
@@ -263,6 +305,22 @@ import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg
         font-size: 14px;
         line-height: 1.5;
         color: #666;
+        margin: 0;
+    }
+
+    .description-text {
+        position: absolute;
+        left: 400px;
+        top: 0;
+        width: 400px;
+    }
+
+    .description-text p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000000;
         margin: 0;
     }
 </style>
