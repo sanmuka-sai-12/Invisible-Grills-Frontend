@@ -4,6 +4,11 @@ import HistoryTwo from '../../../assets/Images/AboutUsPageImg/JourneyImg/History
 import HistoryThree from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryThree.png';
 import HistoryFour from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryFour.png';
 import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryFive.png';
+import toolsIcon from '../../../assets/Icons/AboutUsIcons/JourneyIcons/tools.png';
+import houseIcon from '../../../assets/Icons/AboutUsIcons/JourneyIcons/house.png';
+import grillRevolutionIcon from '../../../assets/Icons/AboutUsIcons/JourneyIcons/TheInvisibleGrillRevolution.png';
+import residentialProjectsIcon from '../../../assets/Icons/AboutUsIcons/JourneyIcons/ServingResidentialProjects.png';
+import trustedSafetyIcon from '../../../assets/Icons/AboutUsIcons/JourneyIcons/TrustedNameHomeSafety.png';
 ---
 
 <section class="history-section">
@@ -19,7 +24,7 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
           <div class="timeline-card">
             <img src={HistoryOne.src} alt="The Beginning" />
             <div class="card-content">
-              <h3>🔧 2000</h3>
+              <h3><img src={toolsIcon.src} alt="" class="card-icon" /> 2000</h3>
               <h4>The Beginning</h4>
               <p>Started our journey with a mission to create modern, durable, and aesthetically superior safety systems for urban homes.</p>
             </div>
@@ -28,7 +33,7 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
           <div class="timeline-card">
             <img src={HistoryTwo.src} alt="Expanding to Apartment Safety" />
             <div class="card-content">
-              <h3>🏢 2005</h3>
+              <h3><img src={houseIcon.src} alt="" class="card-icon" /> 2005</h3>
               <h4>Expanding to Apartment Safety</h4>
               <p>Launched our first line of balcony and window safety solutions, helping thousands of families secure their living spaces.</p>
             </div>
@@ -37,7 +42,7 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
           <div class="timeline-card">
             <img src={HistoryThree.src} alt="The Invisible Grill Revolution" />
             <div class="card-content">
-              <h3>⚡ 2010</h3>
+              <h3><img src={grillRevolutionIcon.src} alt="" class="card-icon" /> 2010</h3>
               <h4>The Invisible Grill Revolution</h4>
               <p>Brought next-generation invisible grill systems to the market, combining high-tensile strength with a seamless, clutter-free look.</p>
             </div>
@@ -46,7 +51,7 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
           <div class="timeline-card">
             <img src={HistoryFour.src} alt="Serving Residential Projects" />
             <div class="card-content">
-              <h3>🏗️ 2016</h3>
+                <h3><img src={residentialProjectsIcon.src} alt="" class="card-icon" /> 2016</h3>
               <h4>Serving Residential Projects</h4>
               <p>Collaborated with leading developers to secure high-rise apartments, premium townships, and large residential communities.</p>
             </div>
@@ -55,7 +60,53 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
           <div class="timeline-card">
             <img src={HistoryFive.src} alt="A Trusted Name in Home Safety" />
             <div class="card-content">
-              <h3>⭐ 2023</h3>
+              <h3><img src={trustedSafetyIcon.src} alt="" class="card-icon" /> 2023</h3>
+              <h4>A Trusted Name in Home Safety</h4>
+              <p>Celebrating over two decades of precision installation, customer trust, and continuous improvement in invisible safety solutions.</p>
+            </div>
+          </div>
+
+          <!-- Duplicate cards for seamless loop -->
+          <div class="timeline-card">
+            <img src={HistoryOne.src} alt="The Beginning" />
+            <div class="card-content">
+              <h3><img src={toolsIcon.src} alt="" class="card-icon" /> 2000</h3>
+              <h4>The Beginning</h4>
+              <p>Started our journey with a mission to create modern, durable, and aesthetically superior safety systems for urban homes.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryTwo.src} alt="Expanding to Apartment Safety" />
+            <div class="card-content">
+              <h3><img src={houseIcon.src} alt="" class="card-icon" /> 2005</h3>
+              <h4>Expanding to Apartment Safety</h4>
+              <p>Launched our first line of balcony and window safety solutions, helping thousands of families secure their living spaces.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryThree.src} alt="The Invisible Grill Revolution" />
+            <div class="card-content">
+              <h3><img src={grillRevolutionIcon.src} alt="" class="card-icon" /> 2010</h3>
+              <h4>The Invisible Grill Revolution</h4>
+              <p>Brought next-generation invisible grill systems to the market, combining high-tensile strength with a seamless, clutter-free look.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryFour.src} alt="Serving Residential Projects" />
+            <div class="card-content">
+                <h3><img src={residentialProjectsIcon.src} alt="" class="card-icon" /> 2016</h3>
+              <h4>Serving Residential Projects</h4>
+              <p>Collaborated with leading developers to secure high-rise apartments, premium townships, and large residential communities.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryFive.src} alt="A Trusted Name in Home Safety" />
+            <div class="card-content">
+              <h3><img src={trustedSafetyIcon.src} alt="" class="card-icon" /> 2023</h3>
               <h4>A Trusted Name in Home Safety</h4>
               <p>Celebrating over two decades of precision installation, customer trust, and continuous improvement in invisible safety solutions.</p>
             </div>
@@ -114,14 +165,15 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
   .timeline-track {
     display: flex;
     gap: 32px;
-    animation: scroll-timeline 20s linear infinite;
-    width: calc(100% + 600px);
+    animation: scroll-timeline 30s linear infinite;
+    width: max-content;
     justify-content: flex-start;
   }
   
   .timeline-card {
     background: white;
     border-radius: 12px;
+    border: 2px solid #B37A42;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     width: 649px;
@@ -150,6 +202,15 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
     color: #FF8C42;
     margin-bottom: 8px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-content .card-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
   }
   
   .card-content h4 {
@@ -170,7 +231,7 @@ import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/Histor
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-600px);
+      transform: translateX(-3405px);
     }
   }
   
