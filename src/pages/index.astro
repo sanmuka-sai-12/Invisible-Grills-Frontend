@@ -1,11 +1,84 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import buildingImage from '../assets/building.png';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Invisible Grills</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>Welcome to Invisible Grills</h1>
+      </section>
+      <section class="content">
+        <div class="content-inner">
+          <h2>Our Services</h2>
+          <p>Premium invisible grills for your safety and security.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(../assets/building.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .content {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    padding: 50px 0;
+  }
+
+  .content-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
+  }
+</style>
