@@ -1,8 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import balconiesImg from '../../../assets/Images/HomePageImg/InvisibleGrillforBalconies.png?url';
 import windowsImg from '../../../assets/Images/HomePageImg/InvisibleGrillForWindows.png?url';
 import apartmentsImg from '../../../assets/Images/HomePageImg/InvisibleGrillForApartments.png?url';
-import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/phonecall.png?url';
+import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/phonecall.png';
 ---
 
 <section class="third-section">
@@ -16,6 +17,9 @@ import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/
             <div class="service-card">
                 <div class="card-image">
                     <img src={balconiesImg} alt="Invisible Grill for Balconies" />
+                    <div class="overlay-icon">
+                        <Image src={phoneIcon} alt="Contact" />
+                    </div>
                 </div>
                 <h3>Invisible Grill for Balconies</h3>
                 <p>Invisible grills for balconies offer a safe, modern solution with clear views. Made from durable, rust-resistant materials, they provide maximum security without compromising aesthetics.</p>
@@ -25,6 +29,9 @@ import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/
             <div class="service-card">
                 <div class="card-image">
                     <img src={windowsImg} alt="Invisible Grill for Windows" />
+                    <div class="overlay-icon">
+                        <Image src={phoneIcon} alt="Contact" />
+                    </div>
                 </div>
                 <h3>Invisible Grill for Windows</h3>
                 <p>Invisible grills for windows offer enhanced safety without compromising aesthetics. These sleek, durable grills prevent accidents, providing protection for children and pets.</p>
@@ -34,6 +41,9 @@ import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/
             <div class="service-card">
                 <div class="card-image">
                     <img src={apartmentsImg} alt="Invisible Grill for Apartments" />
+                    <div class="overlay-icon">
+                        <Image src={phoneIcon} alt="Contact" />
+                    </div>
                 </div>
                 <h3>Invisible Grill for Apartments</h3>
                 <p>Invisible grills for apartments offer enhanced safety by preventing falls without compromising the view. They are sleek, durable, and ideal for balconies, providing secure protection for children and pets.</p>
@@ -88,7 +98,7 @@ import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
-        padding: 20px 60px 0 60px;
+        padding: 20px 0 0 0;
         margin-top: 0;
     }
 
@@ -98,7 +108,7 @@ import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/
         overflow: hidden;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
-        height: 650px;
+        height: 700px;
     }
 
     .service-card:hover {
@@ -107,13 +117,35 @@ import phoneIcon from '../../../assets/Icons/HomeIcons/SmartSaftySolutionsIcons/
 
     .card-image {
         position: relative;
-        height: 450px;
-        overflow: hidden;
+        height: 500px;
     }
 
-    .card-image img {
+    .card-image > img {
         width: 100%;
         height: 100%;
+        object-fit: contain;
+    }
+
+    .overlay-icon {
+        position: absolute;
+        bottom: -15px; /* Move it slightly overlapping the bottom edge like a floating action button */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 56px;
+        height: 56px;
+        background: #B37A42;
+        border: 4px solid #ffffff; 
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .overlay-icon img {
+        width: 24px;
+        height: 24px;
         object-fit: contain;
     }
 
