@@ -1,0 +1,270 @@
+---
+import balconyImg from '../../../assets/Images/HomePageImg/balcony.jpg?url';
+import balconyWomenImg from '../../../assets/Images/HomePageImg/balconyWomen.jpg?url';
+---
+
+<section class="fourth-section">
+    <div class="content-wrapper">
+        <h2>Why Homeowners Trust<br>Our Invisible Grill Solutions</h2>
+        
+        <div class="top-grid">
+            <div class="image-left">
+                <img src={balconyImg} alt="Balcony with invisible grill" />
+            </div>
+            
+            <div class="center-content">
+                <p>We deliver high-quality invisible grill installations engineered for long-lasting safety and modern living. From premium materials to expert workmanship.</p>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="icon">❤️</div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-title">Safe Installation</div>
+                        <div class="stat-desc">Child & pet-proof</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon">♻️</div>
+                        <div class="stat-number">25+ Years</div>
+                        <div class="stat-title">Experience</div>
+                        <div class="stat-desc">Trusted expertise built over decades</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="image-right">
+                <img src={balconyWomenImg} alt="Woman on balcony" />
+            </div>
+        </div>
+        
+        <div class="bottom-grid">
+            <div class="cta-card">
+                <div class="dots">• • • •</div>
+                <h3>Learn More About Our Safety Standards</h3>
+                <p>Explore how our expert technicians, premium materials, and precise installation methods.</p>
+                <button class="arrow-btn">→</button>
+            </div>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="number">1</div>
+                    <div class="feature-content">
+                        <h4>Skilled Technicians</h4>
+                        <p>Installation handled by trained professionals who ensure precision, safety, and clean finishing.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="number">2</div>
+                    <div class="feature-content">
+                        <h4>Quality Guarantee</h4>
+                        <p>Premium marine-grade steel cables and brackets designed for durability, corrosion resistance.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="number">3</div>
+                    <div class="feature-content">
+                        <h4>Trusted Partner</h4>
+                        <p>Thousands of homeowners rely on us for reliable service, transparent pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .fourth-section {
+        width: 100%;
+        min-height: 100vh;
+        background: #E8DDD0;
+        padding: 80px 0;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        color: #333;
+        text-align: center;
+        margin-bottom: 60px;
+        line-height: 1.3;
+    }
+
+    .top-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .image-left img,
+    .image-right img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .image-right img {
+        object-position: center top;
+    }
+
+
+
+    .center-content p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .stats {
+        display: flex;
+        gap: 20px;
+    }
+
+    .stat-card {
+        background: #F5EFE7;
+        border-radius: 16px;
+        padding: 24px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 24px;
+        margin-bottom: 12px;
+        color: #B37A42;
+    }
+
+    .stat-number {
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: #B37A42;
+        margin-bottom: 4px;
+    }
+
+    .stat-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 4px;
+    }
+
+    .stat-desc {
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.3;
+    }
+
+    .bottom-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+    }
+
+    .cta-card {
+        background: #D4C4B0;
+        border-radius: 16px;
+        padding: 40px;
+        position: relative;
+    }
+
+    .dots {
+        color: #B37A42;
+        font-size: 24px;
+        margin-bottom: 20px;
+        letter-spacing: 4px;
+    }
+
+    .cta-card h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 16px;
+        line-height: 1.3;
+    }
+
+    .cta-card p {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .arrow-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: transparent;
+        border: 2px solid #B37A42;
+        color: #B37A42;
+        font-size: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature-item {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .number {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #B37A42;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #B37A42;
+        flex-shrink: 0;
+    }
+
+    .feature-content h4 {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .feature-content p {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #666;
+        margin: 0;
+    }
+</style>
+
+

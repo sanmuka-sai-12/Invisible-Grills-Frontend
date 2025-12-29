@@ -1,0 +1,188 @@
+---
+import highRiseImg from '../../../assets/Images/HomePageImg/HighRiseApartments.png?url';
+import healthcareImg from '../../../assets/Images/HomePageImg/HealthcareOutreach.png?url';
+import schoolsImg from '../../../assets/Images/HomePageImg/SchoolsAndColleges.png?url';
+import commercialImg from '../../../assets/Images/HomePageImg/CommercialBuildings.png?url';
+import frameFiveWomenImg from '../../../assets/Images/HomePageImg/frameFiveWomen.jpg?url';
+---
+
+<section class="fifth-section">
+    <div class="content-wrapper">
+        <div class="main-grid">
+            <div class="left-content">
+                <h2>Where Invisible Safety<br>Fits Perfectly</h2>
+                <p>Our invisible grill solutions are designed for a wide range of residential and commercial environments.</p>
+                
+                <div class="categories-grid">
+                    <div class="category">
+                        <div class="category-image">
+                            <img src={highRiseImg} alt="High Rise Apartments" />
+                        </div>
+                        <h3>High Rise<br>Apartments</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category-image">
+                            <img src={healthcareImg} alt="Healthcare Outreach" />
+                        </div>
+                        <h3>Healthcare<br>Outreach</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category-image">
+                            <img src={schoolsImg} alt="Schools and colleges" />
+                        </div>
+                        <h3>Schools and<br>colleges</h3>
+                    </div>
+                    <div class="category">
+                        <div class="category-image">
+                            <img src={commercialImg} alt="Commercial Buildings" />
+                        </div>
+                        <h3>Commercial<br>Buildings</h3>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stat">
+                        <div class="stat-number">6.5k+</div>
+                        <div class="stat-label">Homes<br>Secured</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Patients<br>Served</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Years of<br>Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Cities<br>Covered</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-image">
+                <img src={frameFiveWomenImg} alt="Woman on staircase with invisible grills" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .fifth-section {
+        width: 100%;
+        min-height: 100vh;
+        background: #f8f8f8;
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .left-content h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .left-content > p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+    .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .category {
+        text-align: center;
+    }
+
+    .category-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 12px auto;
+    }
+
+    .category-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .category h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .stats-card {
+        background: #E8DDD0;
+        border-radius: 16px;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .stat {
+        text-align: center;
+    }
+
+    .stat-number {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #B37A42;
+        margin-bottom: 8px;
+    }
+
+    .stat-label {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        line-height: 1.3;
+    }
+
+    .right-image {
+        height: 600px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .right-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+

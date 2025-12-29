@@ -1,0 +1,128 @@
+---
+import topGrill1 from '../../../assets/Images/HomePageImg/RealInstallation/TopRowgGrills1.png?url';
+import topGrill2 from '../../../assets/Images/HomePageImg/RealInstallation/TopRowgGrills2.png?url';
+import topGrill3 from '../../../assets/Images/HomePageImg/RealInstallation/TopRowgGrills3.png?url';
+import topGrill4 from '../../../assets/Images/HomePageImg/RealInstallation/TopRowgGrills4.png?url';
+import topGrill5 from '../../../assets/Images/HomePageImg/RealInstallation/TopRowgGrills5.png?url';
+import bottomGrill1 from '../../../assets/Images/HomePageImg/RealInstallation/BottomRowGrills1.png?url';
+import bottomGrill2 from '../../../assets/Images/HomePageImg/RealInstallation/BottomRowGrills2.png?url';
+import bottomGrill3 from '../../../assets/Images/HomePageImg/RealInstallation/BottomRowGrills3.png?url';
+import bottomGrill4 from '../../../assets/Images/HomePageImg/RealInstallation/BottomRowGrills4.png?url';
+import bottomGrill5 from '../../../assets/Images/HomePageImg/RealInstallation/BottomRowGrills5.png?url';
+---
+
+<section class="sixth-section">
+    <div class="content-wrapper">
+        <div class="header">
+            <h2>Real Installations. Real Protection.</h2>
+            <p>Explore how our invisible grill solutions look across<br>balconies, windows, and modern living spaces.</p>
+        </div>
+        
+        <div class="scroll-row top-row">
+            <div class="scroll-content">
+                <img src={topGrill1} alt="Installation 1" />
+                <img src={topGrill2} alt="Installation 2" />
+                <img src={topGrill3} alt="Installation 3" />
+                <img src={topGrill4} alt="Installation 4" />
+                <img src={topGrill5} alt="Installation 5" />
+                <img src={topGrill1} alt="Installation 1" />
+                <img src={topGrill2} alt="Installation 2" />
+                <img src={topGrill3} alt="Installation 3" />
+                <img src={topGrill4} alt="Installation 4" />
+                <img src={topGrill5} alt="Installation 5" />
+            </div>
+        </div>
+        
+        <div class="scroll-row bottom-row">
+            <div class="scroll-content">
+                <img src={bottomGrill1} alt="Installation 6" />
+                <img src={bottomGrill2} alt="Installation 7" />
+                <img src={bottomGrill3} alt="Installation 8" />
+                <img src={bottomGrill4} alt="Installation 9" />
+                <img src={bottomGrill5} alt="Installation 10" />
+                <img src={bottomGrill1} alt="Installation 6" />
+                <img src={bottomGrill2} alt="Installation 7" />
+                <img src={bottomGrill3} alt="Installation 8" />
+                <img src={bottomGrill4} alt="Installation 9" />
+                <img src={bottomGrill5} alt="Installation 10" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .sixth-section {
+        width: 100%;
+        background: #f5f5f5;
+        padding: 40px 0;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .content-wrapper {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 0 40px;
+    }
+
+    .header h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+        margin: 0;
+    }
+
+    .scroll-row {
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .scroll-content {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+    }
+
+    .top-row .scroll-content {
+        animation: scrollLeft 30s linear infinite;
+    }
+
+    .bottom-row .scroll-content {
+        animation: scrollRight 30s linear infinite;
+    }
+
+    .scroll-content img {
+        height: 300px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    @keyframes scrollLeft {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    @keyframes scrollRight {
+        0% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+    }
+</style>
+
+

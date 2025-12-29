@@ -1,0 +1,195 @@
+---
+import ronaldImg from '../../../assets/Images/HomePageImg/Reviews/RonaldRichards.png?url';
+import floydImg from '../../../assets/Images/HomePageImg/Reviews/FloydMiles.png?url';
+import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellSteward.png?url';
+---
+
+<section class="seventh-section">
+    <div class="content-wrapper">
+        <div class="header">
+            <h2>Trusted by Thousands of Homeowners</h2>
+            <p>Real experiences from families who chose our invisible grills to<br>protect their homes without compromising on design.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">I will let my mum know about this, she could really make use of software! Very easy to use. Since I invested in software I made over 100,000 dollars profits. I just can't get enough of software. I want to get a T-Shirt with software on it so I can show it off to everyone.</p>
+                <div class="author">
+                    <div class="author-image">
+                        <img src={ronaldImg} alt="Ronald Richards" />
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Ronald Richards</div>
+                        <div class="author-role">Gillette</div>
+                        <div class="badge">🎖️ Testimonial</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">I can't say enough about software. I will refer everyone I know. After using software my business skyrocketed! Not able to tell you how happy I am with software.</p>
+                <div class="author">
+                    <div class="author-image">
+                        <img src={floydImg} alt="Floyd Miles" />
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Floyd Miles</div>
+                        <div class="author-role">Louis Vuitton</div>
+                        <div class="badge">🎖️ Testimonial</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">I like Infinity Estate more and more each day because it makes my life a lot easier. We can't understand how we've been living without Infinity Estate. Infinity Estate has got everything I need. The service was excellent.</p>
+                <div class="author">
+                    <div class="author-image">
+                        <img src={darrellImg} alt="Darrell Steward" />
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Darrell Steward</div>
+                        <div class="author-role">Ferrari</div>
+                        <div class="badge">🎖️ Testimonial</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .seventh-section {
+        width: 100%;
+        min-height: 100vh;
+        background: #f8f8f8;
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .header h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .header p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        position: relative;
+        overflow: visible;
+        border-bottom: 8px solid #B37A42;
+        border-right: 8px solid #B37A42;
+    }
+
+    .testimonial-card:nth-child(1) {
+        align-self: start;
+    }
+
+    .testimonial-card:nth-child(2) {
+        align-self: end;
+    }
+
+    .testimonial-card:nth-child(3) {
+        align-self: center;
+    }
+
+    .stars {
+        color: #B37A42;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .author {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        position: relative;
+    }
+
+    .author-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        position: absolute;
+        left: -40px;
+        bottom: -40px;
+        border: 4px solid white;
+        z-index: 10;
+    }
+
+    .author-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .author-info {
+        margin-left: 50px;
+    }
+
+    .author-name {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 4px;
+    }
+
+    .author-role {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 6px;
+    }
+
+    .badge {
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        color: #B37A42;
+    }
+</style>
+
+

@@ -1,0 +1,124 @@
+---
+import BuildingImg from '../../../assets/Images/AboutUsPageImg/HistoryImg/Building.png';
+---
+
+<section class="history-section">
+  <div class="container">
+    <div class="history-content">
+      <div class="text-content">
+        <h2>History of DS Invisible Grills</h2>
+        <p>For over 25 years, DS Invisible Grills has been dedicated to redefining home safety with modern solutions that protect without blocking the beauty of your view. What began as a small safety-net installation service has now grown into a trusted brand known for premium invisible grill systems and precision craftsmanship.</p>
+        <p>From our early adoption of marine-grade stainless steel wires to today's advanced high-tensile invisible grill technology.</p>
+        <button class="enquiry-btn">Enquiry Now 📞</button>
+      </div>
+      <div class="image-content">
+        <img src={BuildingImg.src} alt="Modern Building" class="building-image" />
+      </div>
+    </div>
+    
+    <div class="why-choose-content">
+      <div class="image-content">
+        <img src={BuildingImg.src} alt="Modern Building" class="building-image" />
+      </div>
+      <div class="text-content">
+        <h2>Why Choose Us?</h2>
+        <p>Every home is different — and so is every safety need. That's why our invisible grill systems are engineered with durability, aesthetics, and family protection in mind. With high-grade stainless steel, expert installation, and customizable options, we ensure your balconies and windows stay safe without compromising on design.</p>
+        <p>Whether it's safeguarding children, pets, or simply enhancing the look of your home, our solutions blend seamlessly</p>
+        <button class="services-btn">Our Services ↗</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .history-section {
+    padding: 80px 0;
+    background: #F8F8F8;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .history-content,
+  .why-choose-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+  }
+  
+  .why-choose-content {
+    margin-bottom: 0;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .text-content h2 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .enquiry-btn,
+  .services-btn {
+    background: transparent;
+    border: 2px solid #D4A574;
+    color: #D4A574;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .enquiry-btn:hover,
+  .services-btn:hover {
+    background: #D4A574;
+    color: white;
+  }
+  
+  .image-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .building-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .history-content,
+    .why-choose-content {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+    }
+    
+    .text-content h2 {
+      font-size: 32px;
+    }
+    
+    .building-image {
+      height: 250px;
+    }
+  }
+</style>

@@ -1,10 +1,7 @@
 ---
-import FirstFrame from '../components/HomeComponents/Home/FirstFrame.astro';
-import HomeBody from '../components/HomeComponents/HomeBody.astro';
-import SecondSection from '../components/HomeComponents/PremiumBrand/SecondSection.astro';
-import ThirdSection from '../components/HomeComponents/SmartSaftySolutions/ThirdSection.astro';
-import FourthSection from '../components/HomeComponents/HomeOwnersTrust/FourthSection.astro';
-import FifthSection from '../components/HomeComponents/UseCase/FifthSection.astro';
+import SolutionsHero from '../components/SolutionComponents/SolutionHero/SolutionsHero.astro';
+import Professionals from '../components/SolutionComponents/Professionals/Professionals.astro';
+import Rating from '../components/ReUseableComponents/Rating/Rating.astro';
 import SixthSection from '../components/ReUseableComponents/InstrallationsProtection/SixthSection.astro';
 import SeventhSection from '../components/ReUseableComponents/Reviews/SeventhSection.astro';
 import ContactSection from '../components/ReUseableComponents/Footer/ContactSection.astro';
@@ -15,16 +12,14 @@ import Footer from '../components/ReUseableComponents/Footer/Footer.astro';
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invisible Grills</title>
+    <title>Solutions - Invisible Grills</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montaga:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <FirstFrame />
-    <SecondSection />
-    <ThirdSection />
-    <FourthSection />
-    <FifthSection />
+    <SolutionsHero />
+    <Professionals />
+    <Rating />
     <SixthSection />
     <SeventhSection />
     <ContactSection />
@@ -38,8 +33,4 @@ import Footer from '../components/ReUseableComponents/Footer/Footer.astro';
         padding: 0;
         box-sizing: border-box;
     }
-
-
-
-
 </style>

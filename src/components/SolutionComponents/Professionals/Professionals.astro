@@ -1,0 +1,209 @@
+---
+import designedBuildingsImg from '../../../assets/Images/SolutionImg/Designes/DesignedBuildings.png';
+import designedBuildingsTwoImg from '../../../assets/Images/SolutionImg/Designes/DesignedBuildingsTwo.png';
+import pegienImg from '../../../assets/Images/SolutionImg/Designes/Pegien.png';
+import affordableImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/Affordable.png';
+import clothHangerImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/ClothHangerDesigns.png';
+import commitmentImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/CommitmentToFamily.png';
+import customSolutionsImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/CoustomSolutions.png';
+import expertInstallationImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/ExpectInstallation.png';
+import extensiveExperienceImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/ExtensiveExperience.png';
+import fastProfessionalImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/FastAndProfessional.png';
+---
+
+<section class="professionals-section">
+    <div class="container">
+        <!-- Invisible Grill for Balconies Section -->
+        <div class="balcony-section">
+            <h2>Invisible Grill for Balconies</h2>
+            
+            <div class="content-grid">
+                <div class="image-section">
+                    <div class="main-image">
+                        <img src={designedBuildingsImg.src} alt="Designed For High-Rise Living" />
+                        <div class="image-overlay">Designed For High-Rise Living</div>
+                    </div>
+                    <div class="side-images">
+                        <img src={designedBuildingsTwoImg.src} alt="Building design" />
+                        <img src={pegienImg.src} alt="Pigeon protection" />
+                    </div>
+                </div>
+                
+                <div class="text-content">
+                    <p>Invisible Grills for balconies provide a perfect blend of safety, security, and aesthetic appeal, making them an ideal choice for modern homes and commercial spaces. These grills are designed to offer protection without compromising the view, creating an unobstructed and seamless appearance. Made with high-tensile strength stainless steel wires, invisible grills are highly durable and resistant to corrosion, ensuring long-lasting performance.</p>
+                    
+                    <p>The minimalistic design of invisible grills complements various architectural styles, whether it's a contemporary or traditional setting. With custom-sized installations, these grills can be fitted to any balcony or window, providing a secure barrier that prevents accidental falls, especially for children and pets.</p>
+                    
+                    <p>Invisible grills are highly space-efficient and do not clutter or obstruct the open feeling of your balcony. Their wire spacing is designed to be discreet yet secure, offering a high level of protection while maintaining the visual appeal of the surrounding area. Additionally, their UV-resistant coating ensures that they remain attractive and functional, even in harsh weather conditions.</p>
+                    
+                    <button class="enquiry-btn">Enquiry Now 📞</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Our Professionalism Section -->
+        <div class="professionalism-section">
+            <h2>Our Professionalism</h2>
+            
+            <div class="cards-scroll">
+                <div class="cards-track">
+                    <img src={expertInstallationImg.src} alt="Expert installation" />
+                    <img src={customSolutionsImg.src} alt="Custom solutions" />
+                    <img src={fastProfessionalImg.src} alt="Fast and professional" />
+                    <img src={affordableImg.src} alt="Affordable" />
+                    <img src={clothHangerImg.src} alt="Cloth Hanger Designs" />
+                    <img src={commitmentImg.src} alt="Commitment To Family" />
+                    <img src={extensiveExperienceImg.src} alt="Extensive Experience" />
+                    <img src={expertInstallationImg.src} alt="Expert installation" />
+                    <img src={customSolutionsImg.src} alt="Custom solutions" />
+                    <img src={fastProfessionalImg.src} alt="Fast and professional" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .professionals-section {
+        padding: 80px 0;
+        background: #f8f8f8;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .balcony-section {
+        margin-bottom: 80px;
+    }
+
+    .balcony-section h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 40px;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+    }
+
+    .image-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-image {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .main-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .image-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .side-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .side-images img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text-content p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .enquiry-btn {
+        background: transparent;
+        border: 2px solid #D4A574;
+        color: #D4A574;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        align-self: flex-start;
+        transition: all 0.3s ease;
+    }
+
+    .enquiry-btn:hover {
+        background: #D4A574;
+        color: white;
+    }
+
+    .professionalism-section h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 40px;
+    }
+
+    .cards-scroll {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .cards-track {
+        display: flex;
+        gap: 30px;
+        animation: scrollLeft 25s linear infinite;
+        width: max-content;
+    }
+
+    @keyframes scrollLeft {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    .cards-track:hover {
+        animation-play-state: paused;
+    }
+
+    .cards-track img {
+        width: 350px;
+        height: 280px;
+        object-fit: contain;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+    }
+</style>

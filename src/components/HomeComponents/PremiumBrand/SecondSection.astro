@@ -1,0 +1,203 @@
+---
+import rectangleImg from '../../../assets/Images/HomePageImg/Premium/Rectangle.png?url';
+import chairImg from '../../../assets/Images/HomePageImg/Premium/chair.png?url';
+import ellipseImg from '../../../assets/Images/HomePageImg/Premium/Ellipse.png?url';
+import sinkImg from '../../../assets/Images/HomePageImg/Premium/sink.png?url';
+import signImg from '../../../assets/Images/HomePageImg/sign.png?url';
+---
+
+<section class="second-section">
+    <div class="content-wrapper">
+        <div class="title-section">
+            <h2>
+                <div class="title-line">PREMIUM <img src={rectangleImg} alt="" class="rectangle-img" /> INVISIBLE</div>
+                <div class="title-line">GRILL <img src={ellipseImg} alt="" class="ellipse-img" /> SOLUTIONS</div>
+                <div class="title-line">IN BANGALORE</div>
+            </h2>
+        </div>
+        
+        <div class="main-content">
+            <div class="left-image">
+                <img src={sinkImg} alt="Kitchen with invisible grills" />
+            </div>
+            
+            <div class="center-text">
+                <h3>Engineered invisible grills, tailored safety solutions, and the confidence of protected living</h3>
+                <p>We specialize in high-quality invisible grills and bird safety solutions designed for modern urban homes. Our systems are crafted to deliver maximum protection for children and pets while preserving open views and architectural beauty. Each installation is engineered with precision, using premium materials that ensure long-term durability, rust resistance, and reliable performance.</p>
+                
+                <div class="signature">
+                    <img src={signImg} alt="Signature" />
+                    <div class="name">
+                        <strong>RAKESH KUMAR</strong> (General Manager)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-content">
+                <div class="right-image">
+                    <img src={chairImg} alt="Interior with invisible grills" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .second-section {
+        width: 100%;
+        min-height: 100vh;
+        background: #f8f8f8;
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .title-section {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .title-section h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .title-line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .rectangle-img {
+        width: 145px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50px;
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: middle;
+    }
+
+    .ellipse-img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: middle;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .left-image img {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .center-text h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .center-text p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .signature {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .signature img {
+        width: 120px;
+        height: auto;
+    }
+
+    .name {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+
+
+
+    .right-image img {
+        width: 150%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .experience-badge {
+        text-align: center;
+        position: relative;
+    }
+
+    .badge-circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #B37A42;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        background: white;
+    }
+
+    .years {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #B37A42;
+    }
+
+    .text {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        color: #B37A42;
+    }
+
+    .badge-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+</style>
+
+

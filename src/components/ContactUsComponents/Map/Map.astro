@@ -1,0 +1,37 @@
+---
+import mapImg from '../../../assets/Images/ContactUsImg/MapImg/Maps.png';
+---
+
+<section class="map-section">
+    <div class="map-container">
+        <img src={mapImg.src} alt="Office Location Map" class="map-image" />
+    </div>
+</section>
+
+<style>
+    .map-section {
+        width: 100%;
+        padding: 40px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8f8f8;
+    }
+
+    .map-container {
+        width: 1200px;
+        height: 593px;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+</style>

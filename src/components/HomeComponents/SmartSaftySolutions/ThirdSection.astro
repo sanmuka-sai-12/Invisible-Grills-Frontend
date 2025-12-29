@@ -1,0 +1,198 @@
+---
+import balconiesImg from '../../../assets/Images/HomePageImg/InvisibleGrillforBalconies.png?url';
+import windowsImg from '../../../assets/Images/HomePageImg/InvisibleGrillForWindows.png?url';
+import apartmentsImg from '../../../assets/Images/HomePageImg/InvisibleGrillForApartments.png?url';
+import phoneIcon from '../../../assets/Images/HomePageImg/phoneIcon.png?url';
+---
+
+<section class="third-section">
+    <div class="content-wrapper">
+        <div class="header-content">
+            <h2>Smart Safety Solutions<br>for Every Space</h2>
+            <p>From balconies and windows to full apartment protection, our invisible grill systems are designed to deliver safety without disturbing the beauty of your view.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="fast-selling">Fast selling</span>
+                    <img src={balconiesImg} alt="Invisible Grill for Balconies" />
+                    <button class="call-btn">
+                        <img src={phoneIcon} alt="Call" />
+                    </button>
+                </div>
+                <h3>Invisible Grill for Balconies</h3>
+                <p>Invisible grills for balconies offer a safe, modern solution with clear views. Made from durable, rust-resistant materials, they provide maximum security without compromising aesthetics.</p>
+                <button class="enquiry-btn">Enquiry Now →</button>
+            </div>
+            
+            <div class="service-card">
+                <div class="card-image">
+                    <img src={windowsImg} alt="Invisible Grill for Windows" />
+                    <button class="call-btn">
+                        <img src={phoneIcon} alt="Call" />
+                    </button>
+                </div>
+                <h3>Invisible Grill for Windows</h3>
+                <p>Invisible grills for windows offer enhanced safety without compromising aesthetics. These sleek, durable grills prevent accidents, providing protection for children and pets.</p>
+                <button class="enquiry-btn">Enquiry Now →</button>
+            </div>
+            
+            <div class="service-card">
+                <div class="card-image">
+                    <span class="fast-selling">Fast selling</span>
+                    <img src={apartmentsImg} alt="Invisible Grill for Apartments" />
+                    <button class="call-btn">
+                        <img src={phoneIcon} alt="Call" />
+                    </button>
+                </div>
+                <h3>Invisible Grill for Apartments</h3>
+                <p>Invisible grills for apartments offer enhanced safety by preventing falls without compromising the view. They are sleek, durable, and ideal for balconies, providing secure protection for children and pets.</p>
+                <button class="enquiry-btn">Enquiry Now →</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .third-section {
+        width: 100%;
+        min-height: 100vh;
+        background: #ffffff;
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .header-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        margin-bottom: 60px;
+        align-items: start;
+    }
+
+    .header-content h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.2;
+    }
+
+    .header-content p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+        margin-top: 20px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .service-card {
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-image {
+        position: relative;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .fast-selling {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background: #ff6b6b;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        z-index: 2;
+    }
+
+    .call-btn {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #B37A42;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .call-btn img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    .service-card h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        margin: 20px 20px 12px 20px;
+    }
+
+    .service-card p {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #666;
+        margin: 0 20px 20px 20px;
+    }
+
+    .service-card .enquiry-btn {
+        width: calc(100% - 40px);
+        margin: 0 20px 20px 20px;
+        background: #B37A42;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .service-card .enquiry-btn:hover {
+        background: #9a6635;
+    }
+</style>
+
+

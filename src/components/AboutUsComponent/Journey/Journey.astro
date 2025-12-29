@@ -1,0 +1,196 @@
+---
+import HistoryOne from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryOne.png';
+import HistoryTwo from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryTwo.png';
+import HistoryThree from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryThree.png';
+import HistoryFour from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryFour.png';
+import HistoryFive from '../../../assets/Images/AboutUsPageImg/JourneyImg/HistoryFive.png';
+---
+
+<section class="history-section">
+  <div class="container">
+    <div class="history-header">
+      <h2>Our 25-Year Journey of Safety & Innovation</h2>
+      <p>From our early beginnings to becoming a trusted leader in every milestone reflects our commitment to protecting homes with modern design.</p>
+    </div>
+    
+    <div class="timeline-container">
+      <div class="timeline-scroll">
+        <div class="timeline-track">
+          <div class="timeline-card">
+            <img src={HistoryOne.src} alt="The Beginning" />
+            <div class="card-content">
+              <h3>🔧 2000</h3>
+              <h4>The Beginning</h4>
+              <p>Started our journey with a mission to create modern, durable, and aesthetically superior safety systems for urban homes.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryTwo.src} alt="Expanding to Apartment Safety" />
+            <div class="card-content">
+              <h3>🏢 2005</h3>
+              <h4>Expanding to Apartment Safety</h4>
+              <p>Launched our first line of balcony and window safety solutions, helping thousands of families secure their living spaces.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryThree.src} alt="The Invisible Grill Revolution" />
+            <div class="card-content">
+              <h3>⚡ 2010</h3>
+              <h4>The Invisible Grill Revolution</h4>
+              <p>Brought next-generation invisible grill systems to the market, combining high-tensile strength with a seamless, clutter-free look.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryFour.src} alt="Serving Residential Projects" />
+            <div class="card-content">
+              <h3>🏗️ 2016</h3>
+              <h4>Serving Residential Projects</h4>
+              <p>Collaborated with leading developers to secure high-rise apartments, premium townships, and large residential communities.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-card">
+            <img src={HistoryFive.src} alt="A Trusted Name in Home Safety" />
+            <div class="card-content">
+              <h3>⭐ 2023</h3>
+              <h4>A Trusted Name in Home Safety</h4>
+              <p>Celebrating over two decades of precision installation, customer trust, and continuous improvement in invisible safety solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .history-section {
+    padding: 80px 0;
+    background: #FAFAFA;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .history-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .history-header h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .history-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .timeline-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .timeline-scroll {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  
+  .timeline-track {
+    display: flex;
+    gap: 32px;
+    animation: scroll-timeline 20s linear infinite;
+    width: calc(100% + 600px);
+    justify-content: flex-start;
+  }
+  
+  .timeline-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    width: 649px;
+    height: 370px;
+    display: flex;
+    flex-shrink: 0;
+  }
+  
+  .timeline-card img {
+    width: 324px;
+    height: 370px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .card-content {
+    padding: 24px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-content h3 {
+    font-size: 28px;
+    color: #FF8C42;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .card-content h4 {
+    font-size: 18px;
+    color: #FF8C42;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @keyframes scroll-timeline {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-600px);
+    }
+  }
+  
+  .timeline-track:hover {
+    animation-play-state: paused;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-card {
+      min-width: 320px;
+      flex-direction: column;
+    }
+    
+    .timeline-card img {
+      width: 100%;
+      height: 150px;
+    }
+    
+    .history-header h2 {
+      font-size: 32px;
+    }
+  }
+</style>
