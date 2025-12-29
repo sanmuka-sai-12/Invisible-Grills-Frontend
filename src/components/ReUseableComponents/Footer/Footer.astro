@@ -1,5 +1,6 @@
 ---
 import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/FooterLogo.png';
+import callNoIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/callno.png';
 ---
 
 <footer class="footer">
@@ -8,7 +9,7 @@ import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/Foot
             <div class="logo-section">
                 <img src={footerLogoImg.src} alt="DS Logo" class="footer-logo" />
                 <p class="company-description">
-                    Invisible safety solutions designed for modern homes, open views,
+                    Invisible safety solutions designed for modern homes, open views,<br>
                     and protected living without compromising on design.
                 </p>
             </div>
@@ -38,8 +39,8 @@ import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/Foot
         <div class="footer-right">
             <h3>Get in touch</h3>
             <div class="contact-info">
-                <p class="phone">📞 040 67309967</p>
-                <p class="phone">📞 +91 44 4859 699</p>
+                <p class="phone"><img src={callNoIcon.src} alt="Call" class="phone-icon-img" /> 040 67309967</p>
+                <p class="phone"><img src={callNoIcon.src} alt="Call" class="phone-icon-img" /> +91 44 4859 699</p>
             </div>
         </div>
     </div>
@@ -59,7 +60,7 @@ import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/Foot
         margin: 0 auto;
         padding: 0 40px;
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 1fr;
         gap: 60px;
     }
 
@@ -78,8 +79,8 @@ import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/Foot
         font-family: 'Inter', sans-serif;
         font-size: 14px;
         line-height: 1.6;
-        color: #666;
-        max-width: 300px;
+        color: #232323;
+        max-width: 100%;
     }
 
     .social-section h3 {
@@ -150,6 +151,12 @@ import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/Foot
         display: flex;
         align-items: center;
         gap: 8px;
+    }
+
+    .phone-icon-img {
+        width: 12px;
+        height: 12px;
+        object-fit: contain;
     }
 </style>
 
