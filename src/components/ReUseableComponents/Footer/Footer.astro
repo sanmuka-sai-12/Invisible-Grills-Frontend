@@ -1,12 +1,12 @@
 ---
-import footerLogoImg from '../../../assets/Images/HomePageImg/FirstHomeFrame/logo.png?url';
+import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/FooterLogo.png';
 ---
 
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-left">
             <div class="logo-section">
-                <img src={footerLogoImg} alt="DS Logo" class="footer-logo" />
+                <img src={footerLogoImg.src} alt="DS Logo" class="footer-logo" />
                 <p class="company-description">
                     Invisible safety solutions designed for modern homes, open views,
                     and protected living without compromising on design.
@@ -68,9 +68,10 @@ import footerLogoImg from '../../../assets/Images/HomePageImg/FirstHomeFrame/log
     }
 
     .footer-logo {
-        width: 80px;
-        height: 80px;
+        width: 110px;
+        height: 110px;
         margin-bottom: 20px;
+        object-fit: contain;
     }
 
     .company-description {
