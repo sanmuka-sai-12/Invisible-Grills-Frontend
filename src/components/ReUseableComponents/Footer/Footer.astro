@@ -1,6 +1,10 @@
 ---
 import footerLogoImg from '../../../assets/Icons/ReUseableIcons/FooterIcons/FooterLogo.png';
 import callNoIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/callno.png';
+import facebookIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/facebook.png';
+import instagramIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/Instragram.png';
+import whatsappIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/footerwhatsapp.png';
+import linkedinIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/linkedin.png';
 ---
 
 <footer class="footer">
@@ -17,10 +21,10 @@ import callNoIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/callno.
             <div class="social-section">
                 <h3>Follow Us On</h3>
                 <div class="social-icons">
-                    <a href="#" class="social-icon facebook">f</a>
-                    <a href="#" class="social-icon instagram">📷</a>
-                    <a href="#" class="social-icon whatsapp">📱</a>
-                    <a href="#" class="social-icon linkedin">in</a>
+                    <a href="javascript:void(0)" class="social-icon facebook"><img src={facebookIcon.src} alt="Facebook" class="social-img" /></a>
+                    <a href="javascript:void(0)" class="social-icon instagram"><img src={instagramIcon.src} alt="Instagram" class="social-img" /></a>
+                    <a href="javascript:void(0)" class="social-icon whatsapp"><img src={whatsappIcon.src} alt="WhatsApp" class="social-img" /></a>
+                    <a href="javascript:void(0)" class="social-icon linkedin"><img src={linkedinIcon.src} alt="LinkedIn" class="social-img" /></a>
                 </div>
             </div>
         </div>
@@ -97,22 +101,27 @@ import callNoIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/callno.
     }
 
     .social-icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #B37A42;
-        color: white;
+        width: 50px;
+        height: 50px;
+        background: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        font-size: 16px;
-        transition: background 0.3s ease;
+        transition: transform 0.3s ease;
+        transform: translateY(-5px);
     }
 
     .social-icon:hover {
-        background: #9a6635;
+        transform: translateY(-8px);
     }
+
+    .social-icon.linkedin {
+        background: white;
+        border-radius: 50%;
+    }
+
+
 
     .footer-center h3, .footer-right h3 {
         font-family: 'Inter', sans-serif;
@@ -146,7 +155,7 @@ import callNoIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/callno.
     .contact-info .phone {
         font-family: 'Inter', sans-serif;
         font-size: 14px;
-        color: #B37A42;
+        color: #232323;
         margin-bottom: 8px;
         display: flex;
         align-items: center;
@@ -156,6 +165,12 @@ import callNoIcon from '../../../assets/Icons/ReUseableIcons/FooterIcons/callno.
     .phone-icon-img {
         width: 12px;
         height: 12px;
+        object-fit: contain;
+    }
+
+    .social-img {
+        width: 50px;
+        height: 50px;
         object-fit: contain;
     }
 </style>

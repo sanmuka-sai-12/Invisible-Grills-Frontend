@@ -2,6 +2,7 @@
 import ronaldImg from '../../../assets/Images/HomePageImg/Reviews/RonaldRichards.png?url';
 import floydImg from '../../../assets/Images/HomePageImg/Reviews/FloydMiles.png?url';
 import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellSteward.png?url';
+import likeIcon from '../../../assets/Icons/ReUseableIcons/ReviewsIcons/like.png';
 ---
 
 <section class="seventh-section">
@@ -12,7 +13,7 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
         </div>
         
         <div class="testimonials-grid">
-            <div class="testimonial-card">
+            <div class="testimonial-card card-top">
                 <div class="stars">★★★★★</div>
                 <p class="testimonial-text">I will let my mum know about this, she could really make use of software! Very easy to use. Since I invested in software I made over 100,000 dollars profits. I just can't get enough of software. I want to get a T-Shirt with software on it so I can show it off to everyone.</p>
                 <div class="author">
@@ -22,12 +23,12 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
                     <div class="author-info">
                         <div class="author-name">Ronald Richards</div>
                         <div class="author-role">Gillette</div>
-                        <div class="badge">🎖️ Testimonial</div>
+                        <div class="badge"><img src={likeIcon.src} alt="Reviews" class="like-icon" /> Testimonial</div>
                     </div>
                 </div>
             </div>
             
-            <div class="testimonial-card">
+            <div class="testimonial-card card-bottom">
                 <div class="stars">★★★★★</div>
                 <p class="testimonial-text">I can't say enough about software. I will refer everyone I know. After using software my business skyrocketed! Not able to tell you how happy I am with software.</p>
                 <div class="author">
@@ -37,12 +38,12 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
                     <div class="author-info">
                         <div class="author-name">Floyd Miles</div>
                         <div class="author-role">Louis Vuitton</div>
-                        <div class="badge">🎖️ Testimonial</div>
+                        <div class="badge"><img src={likeIcon.src} alt="Reviews" class="like-icon" /> Testimonial</div>
                     </div>
                 </div>
             </div>
             
-            <div class="testimonial-card">
+            <div class="testimonial-card card-top">
                 <div class="stars">★★★★★</div>
                 <p class="testimonial-text">I like Infinity Estate more and more each day because it makes my life a lot easier. We can't understand how we've been living without Infinity Estate. Infinity Estate has got everything I need. The service was excellent.</p>
                 <div class="author">
@@ -52,7 +53,7 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
                     <div class="author-info">
                         <div class="author-name">Darrell Steward</div>
                         <div class="author-role">Ferrari</div>
-                        <div class="badge">🎖️ Testimonial</div>
+                        <div class="badge"><img src={likeIcon.src} alt="Reviews" class="like-icon" /> Testimonial</div>
                     </div>
                 </div>
             </div>
@@ -63,15 +64,14 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
 <style>
     .seventh-section {
         width: 100%;
-        min-height: 100vh;
         background: #f8f8f8;
-        padding: 80px 0;
+        padding: 100px 0 120px 0;
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
 
     .content-wrapper {
-        max-width: 1200px;
+        max-width: 1100px;
         width: 100%;
         margin: 0 auto;
         padding: 0 40px;
@@ -79,15 +79,15 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
 
     .header {
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
 
     .header h2 {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montaga', serif;
         font-size: 48px;
         font-weight: 400;
         color: #333;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 
     .header p {
@@ -100,64 +100,80 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
     .testimonials-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        align-items: center;
+        gap: 80px;
+        align-items: end; /* Align cards to the bottom */
     }
 
     .testimonial-card {
         background: white;
-        border-radius: 20px;
-        padding: 30px;
+        border-radius: 40px 20px 20px 20px; /* top-left, top-right, bottom-right, bottom-left */
+        padding: 25px 30px; /* Reduced padding */
         position: relative;
-        overflow: visible;
-        border-bottom: 8px solid #B37A42;
-        border-right: 8px solid #B37A42;
+        box-shadow: 12px 12px 0px #B37A42; /* Updated shadow color */
+        border: 1px solid #f0f0f0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
+    /* Height variations */
     .testimonial-card:nth-child(1) {
-        align-self: start;
+        min-height: 350px; /* Tallest */
+        margin-top: 0;
     }
 
     .testimonial-card:nth-child(2) {
-        align-self: end;
+        min-height: 260px; /* Shortest */
+        margin-top: 0;
     }
 
     .testimonial-card:nth-child(3) {
-        align-self: center;
+        min-height: 305px; /* Middle height */
+        margin-top: 0;
+    }
+
+    .card-top, .card-bottom {
+        margin-top: 0;
     }
 
     .stars {
         color: #B37A42;
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 16px; /* Reduced */
+        margin-bottom: 12px; /* Reduced */
+        letter-spacing: 2px;
+        margin-left: 70px; /* Align with author info */
     }
 
     .testimonial-text {
         font-family: 'Inter', sans-serif;
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 13px; /* Reduced */
+        line-height: 1.5; /* Reduced */
         color: #333;
-        margin-bottom: 30px;
+        margin-bottom: 20px; /* Reduced */
+        flex-grow: 1;
+        margin-left: 70px; /* Align with author info */
     }
 
     .author {
         display: flex;
-        gap: 15px;
-        align-items: center;
-        position: relative;
+        align-items: center; /* Remove gap as image is absolute */
+        position: static; /* Ensure author container doesn't trap absolute if we want card relative, but card is relative so this is fine */
+        margin-top: auto; /* Push to bottom if needed, though split-between does it */
     }
 
     .author-image {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         overflow: hidden;
         flex-shrink: 0;
+        background: #ddd;
         position: absolute;
-        left: -40px;
-        bottom: -40px;
-        border: 4px solid white;
-        z-index: 10;
+        left: -60px; /* Half outside (120/2) */
+        bottom: 0px; /* Aligned with bottom edge */
+        border: 4px solid white; /* Add border for separation */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .author-image img {
@@ -167,28 +183,38 @@ import darrellImg from '../../../assets/Images/HomePageImg/Reviews/DarrellStewar
     }
 
     .author-info {
-        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-left: 70px; /* Space for half the image (60px visible) + some padding */
     }
 
     .author-name {
         font-family: 'Inter', sans-serif;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 700;
         color: #333;
-        margin-bottom: 4px;
     }
 
     .author-role {
         font-family: 'Inter', sans-serif;
-        font-size: 14px;
-        color: #666;
-        margin-bottom: 6px;
+        font-size: 13px;
+        color: #888;
     }
 
     .badge {
         font-family: 'Inter', sans-serif;
-        font-size: 12px;
-        color: #B37A42;
+        font-size: 13px;
+        color: #202020;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .like-icon {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
     }
 </style>
 
