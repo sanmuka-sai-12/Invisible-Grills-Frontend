@@ -1,12 +1,13 @@
 ---
 import Header from '../../ReUseableComponents/Header/Header.astro';
+import SolutionIcon from '../../../assets/Icons/SolutionIcons/SolutionHeroIcons/solution.png';
 ---
 
 <div class="solutions-hero">
     <Header />
     <div class="hero-content">
         <div class="solutions-badge">
-            🏠 Balcony Safety, Reinvented
+            <img src={SolutionIcon.src} alt="Solution Icon" class="badge-icon" /> Balcony Safety, Reinvented
         </div>
         <h1>
             Seamless Safety for<br>
@@ -43,16 +44,21 @@ import Header from '../../ReUseableComponents/Header/Header.astro';
     .solutions-badge {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
         background: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid #FFFFFF;
         border-radius: 50px;
-        padding: 12px 24px;
+        padding: 10px 24px;
         font-family: 'Inter', sans-serif;
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 30px;
-        backdrop-filter: blur(10px);
+    }
+
+    .badge-icon {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
     }
 
     .hero-content h1 {
