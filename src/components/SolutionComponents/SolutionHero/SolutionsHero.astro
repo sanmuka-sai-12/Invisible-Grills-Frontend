@@ -22,15 +22,26 @@ import SolutionIcon from '../../../assets/Icons/SolutionIcons/SolutionHeroIcons/
 <style>
     .solutions-hero {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
-        background-image: url('../../../assets/Images/SolutionImg/SolutionHeroImg/SolutionHero.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden; /* Crop out the edges */
+    }
+
+    .solutions-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../assets/Images/SolutionImg/SolutionHeroImg/SolutionHero.png');
+        background-size: cover;
+        background-position: center;
+        transform: scale(1.05); /* Slight zoom to clean right/bottom edges */
+        z-index: -1;
     }
 
     .hero-content {

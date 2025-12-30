@@ -14,15 +14,26 @@ import buildingImg from '../../../assets/Images/HomePageImg/FirstHomeFrame/build
 <style>
     .hero {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 150vh;
-        background-image: url('../../../assets/Images/HomePageImg/FirstHomeFrame/building.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden; /* Crop out the edges */
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../assets/Images/HomePageImg/FirstHomeFrame/building.png');
+        background-size: cover;
+        background-position: center;
+        transform: scale(1.05); /* Slight zoom to clean right/bottom edges */
+        z-index: -1;
     }
 </style>
 
