@@ -9,6 +9,7 @@ import customSolutionsImg from '../../../assets/Images/SolutionImg/Designes/OurP
 import expertInstallationImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/ExpectInstallation.png';
 import extensiveExperienceImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/ExtensiveExperience.png';
 import fastProfessionalImg from '../../../assets/Images/SolutionImg/Designes/OurProfessionalism/FastAndProfessional.png';
+import ProfessionalCall from '../../../assets/Icons/SolutionIcons/ProfessionalsIcons/professionalCall.png';
 ---
 
 <section class="professionals-section">
@@ -21,7 +22,6 @@ import fastProfessionalImg from '../../../assets/Images/SolutionImg/Designes/Our
                 <div class="image-section">
                     <div class="main-image">
                         <img src={designedBuildingsImg.src} alt="Designed For High-Rise Living" />
-                        <div class="image-overlay">Designed For High-Rise Living</div>
                     </div>
                     <div class="side-images">
                         <img src={designedBuildingsTwoImg.src} alt="Building design" />
@@ -36,7 +36,7 @@ import fastProfessionalImg from '../../../assets/Images/SolutionImg/Designes/Our
                     
                     <p>Invisible grills are highly space-efficient and do not clutter or obstruct the open feeling of your balcony. Their wire spacing is designed to be discreet yet secure, offering a high level of protection while maintaining the visual appeal of the surrounding area. Additionally, their UV-resistant coating ensures that they remain attractive and functional, even in harsh weather conditions.</p>
                     
-                    <button class="enquiry-btn">Enquiry Now 📞</button>
+                    <button class="enquiry-btn">Enquiry Now <img src={ProfessionalCall.src} alt="Call Icon" class="btn-icon" /></button>
                 </div>
             </div>
         </div>
@@ -112,18 +112,6 @@ import fastProfessionalImg from '../../../assets/Images/SolutionImg/Designes/Our
         object-fit: cover;
     }
 
-    .image-overlay {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 12px 20px;
-        border-radius: 8px;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-    }
 
     .side-images {
         display: grid;
@@ -162,6 +150,15 @@ import fastProfessionalImg from '../../../assets/Images/SolutionImg/Designes/Our
         margin-top: 20px;
         align-self: flex-start;
         transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
     }
 
     .enquiry-btn:hover {
@@ -199,11 +196,10 @@ import fastProfessionalImg from '../../../assets/Images/SolutionImg/Designes/Our
     }
 
     .cards-track img {
-        width: 350px;
+        width: auto;
         height: 280px;
         object-fit: contain;
         border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         flex-shrink: 0;
     }
 </style>
