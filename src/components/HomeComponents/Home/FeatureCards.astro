@@ -7,25 +7,30 @@ import star from '../../../assets/Icons/HomeIcons/homeIcons/star.png';
 
 <section class="features">
     <div class="feature-card"> 
-    <div class="feature-icon">
-        <Image src={shield} alt="Safety Shield" width={24} />
-    </div>
-       
-        <h3>Ultimate Safety</h3>
+        <div class="feature-header-row">
+            <div class="feature-icon">
+                <Image src={shield} alt="Safety Shield" width={24} />
+            </div>
+            <h3>Ultimate Safety</h3>
+        </div>
         <p>Engineered to protect children, pets, and families from falls without compromising openness.</p>
     </div>
     <div class="feature-card">
-        <div class="feature-icon">
-            <Image src={setting} alt="Premium Strength" width={24} />
+        <div class="feature-header-row">
+            <div class="feature-icon">
+                <Image src={setting} alt="Premium Strength" width={24} />
+            </div>
+            <h3 style="color: #FFFFFF;">Premium Strength</h3>
         </div>
-        <h3>Premium Strength</h3>
         <p>Crafted with high-grade stainless steel cables built for long-term durability and tension strength.</p>
     </div>
     <div class="feature-card">
-        <div class="feature-icon">
-            <Image src={star} alt="Timeless Aesthetics" width={24} />
+        <div class="feature-header-row">
+            <div class="feature-icon">
+                <Image src={star} alt="Timeless Aesthetics" width={24} />
+            </div>
+            <h3 style="color: #FFFFFF;">Timeless Aesthetics</h3>
         </div>
-        <h3>Timeless Aesthetics</h3>
         <p>Designed to blend seamlessly into modern balconies while keeping your view completely unobstructed.</p>
     </div>
 </section>
@@ -36,22 +41,33 @@ import star from '../../../assets/Icons/HomeIcons/homeIcons/star.png';
         bottom: 40px;
         left: 50%;
         transform: translateX(-50%);
-        display: flex;
-        gap: 40px;
-        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 250px;
+        width: 100%;
+        max-width: 1600px;
+        padding: 0 80px;
+        box-sizing: border-box;
     }
 
     .feature-card {
         background: transparent;
         border-left: 3px solid #D4A574;
-        padding: 24px;
+        padding: 4px 16px;
         border-radius: 8px;
-        flex: 1;
+    }
+
+    .feature-header-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 4px;
     }
 
     .feature-icon {
         font-size: 24px;
-        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
     }
 
     .feature-card h3 {
@@ -59,13 +75,16 @@ import star from '../../../assets/Icons/HomeIcons/homeIcons/star.png';
         font-size: 18px;
         font-weight: 600;
         color: #D4A574;
-        margin-bottom: 8px;
+        margin: 0;
     }
 
     .feature-card p {
+        width: 290px;
+        height: 72px;
         font-family: 'Inter', sans-serif;
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
         color: #ffffff;
         margin: 0;
     }
