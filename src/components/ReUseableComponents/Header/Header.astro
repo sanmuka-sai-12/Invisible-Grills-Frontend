@@ -17,7 +17,7 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
                     <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
-            <button class="nav-btn">Gallery</button>
+            <button class="nav-btn" id="gallery-btn">Gallery</button>
             <button class="nav-btn" id="contact-btn">Contact Us</button>
         </nav>
         <button class="enquiry-btn">
@@ -40,7 +40,7 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
         justify-content: center;
         padding: 0;
         z-index: 10;
-        background: #FAFAFA;
+        background: #FFFFFF;
     }
 
     .header-content {
@@ -57,7 +57,7 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
         height: 100px;
         display: flex;
         align-items: center;
-        margin-right: 220px;
+        margin-right: 130px; /* Reduced from 220px to move buttons left */
     }
 
     .logo-wrapper img {
@@ -69,8 +69,10 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
 
     .nav {
         display: flex;
-        gap: 50px;
-        margin-right: 220px;
+        gap: 40px;
+        margin-right: auto;
+        white-space: nowrap;
+        align-items: center;
     }
 
     .nav-btn {
@@ -87,10 +89,21 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
         display: flex;
         align-items: center;
         gap: 4px;
+        height: 40px; /* Consistent height for all nav buttons */
     }
 
     .nav-btn.dropdown svg {
         margin-left: 4px;
+    }
+
+    .nav-btn.active::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
     }
 
     .nav-btn:hover,
@@ -135,7 +148,22 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
         const homeBtn = document.getElementById('home-btn');
         const aboutBtn = document.getElementById('about-btn');
         const solutionsBtn = document.getElementById('solutions-btn');
+        const galleryBtn = document.getElementById('gallery-btn');
         const contactBtn = document.getElementById('contact-btn');
+        
+        // Set active state based on current path
+        const path = window.location.pathname;
+        if (path === '/' || path === '/index.html') {
+            homeBtn?.classList.add('active');
+        } else if (path === '/about' || path === '/about/') {
+            aboutBtn?.classList.add('active');
+        } else if (path === '/Solution' || path === '/Solution/') {
+            solutionsBtn?.classList.add('active');
+        } else if (path === '/Gallery' || path === '/Gallery/') {
+            galleryBtn?.classList.add('active');
+        } else if (path === '/ContactUs' || path === '/ContactUs/') {
+            contactBtn?.classList.add('active');
+        }
         
         if (homeBtn) {
             homeBtn.addEventListener('click', function() {
@@ -154,6 +182,12 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
                 window.location.href = '/Solution';
             });
         }
+
+        if (galleryBtn) {
+            galleryBtn.addEventListener('click', function() {
+                window.location.href = '/Gallery';
+            });
+        }
         
         if (contactBtn) {
             contactBtn.addEventListener('click', function() {
@@ -162,5 +196,3 @@ import callIcon from '../../../assets/Icons/ReUseableIcons/HeaderIcons/headerCal
         }
     });
 </script>
-
-
